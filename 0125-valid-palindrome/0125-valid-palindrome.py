@@ -1,6 +1,6 @@
 class Solution:
     import sys
-    sys.setrecursionlimit(100000000)
+    # sys.setrecursionlimit(100000000)
     def isPalindrome(self, s: str) -> bool:
         def checker(word):
             # if not word:
