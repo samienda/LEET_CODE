@@ -19,5 +19,3 @@ class Solution:
             else:
                 return mid
 
-
-        return mid
