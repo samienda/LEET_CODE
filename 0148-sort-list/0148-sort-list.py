@@ -32,7 +32,7 @@ class Solution:
 
         # return bubble(head)
 
-        # built in sort
+        # built in sort - which uses mergesort (o(n logn))
 
         def builtIn(head):
             curr = head
