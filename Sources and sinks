@@ -1,0 +1,23 @@
+n = int(input())
+
+adj_matrix = [list(map(int, input().split())) for i in range(n)]
+
+def sourceAndSinks(matrix):
+    n = len(matrix)
+    sources = []
+    sinks = []
+
+    for vertex in range(n):
+        if all(matrix[i][vertex] == 0 for i in range(n)):
+            sources.append(vertex + 1)
+
+        if all(matrix[vertex][j] == 0 for j in range(n)):
+            sinks.append(vertex + 1)
+
+
+    return sources, sinks
+
+
+sources, sinks = sourceAndSinks(adj_matrix)
+print(len(sources), *sources)
+print(len(sinks), *sinks)
